@@ -142,6 +142,7 @@ Sales::~Sales() {
 	for (QVector<sale>::iterator it = sales.begin(); it != sales.end(); it++) {
 		out<<*it;
 	}
+	delete &sales;
 }
 
 void Sales::add() {
